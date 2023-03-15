@@ -16,6 +16,7 @@ public class Quadrado extends Forma{
         this.lado = lado;
     }
 
+    //Polimorfismo por sobreposição e inclusão
     @Override
     public double area() {
         return lado*lado;
@@ -29,7 +30,4 @@ public class Quadrado extends Forma{
     public void setLado(float lado) {
         this.lado = lado;
     }
-    
-    
-    
 }

@@ -15,6 +15,7 @@ public class Circulo extends Forma {
         super(nome);
     }
 
+//Polimorfismo por sobreposição e inclusão
     @Override
     public double area() {
         return Math.PI * raio * raio;

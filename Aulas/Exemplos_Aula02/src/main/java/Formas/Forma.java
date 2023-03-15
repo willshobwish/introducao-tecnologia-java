@@ -13,13 +13,15 @@ public abstract class Forma {
     private String nome;
     protected double area;
     public float perimetro;
-
+    
+//    Polimorfismo por sobrecarga
     public Forma(String nome) {
         this.nome = nome;
     }
 
     public abstract double area();
 
+//    Polimorfismo por sobrecarga
     public Forma(String nome, double area, float perimetro) {
         this.nome = nome;
         this.area = area;

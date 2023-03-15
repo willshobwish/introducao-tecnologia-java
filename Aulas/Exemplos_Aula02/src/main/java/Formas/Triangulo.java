@@ -16,11 +16,13 @@ public class Triangulo extends Forma{
         super(nome);
     }
 
+    //Polimorfismo por sobreposição e sobregarca
     @Override
     public double area() {
         return base*altura/2;
     }
     
+    //Polimorfismo por sobreposição e sobregarca
     public double area(float base, float altura){
         return base*altura/2;
     }
