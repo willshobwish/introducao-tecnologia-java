@@ -19,6 +19,7 @@ public class Exemplos_POO {
         Circulo circulo = new Circulo("circulo");
         Quadrado quadrado = new Quadrado("quadrado", 10, 10, 10);
         Triangulo triangulo = new Triangulo("triangulo");
+//       Eh possivel chamar todos os metodos e alguns por acesso direto (porque nao possuem o metodo get)
         System.out.println("""
                            Circulo: %s
                            Area: %f
@@ -37,6 +38,10 @@ public class Exemplos_POO {
                            Base: %f
                            Altura: %f
                            """.formatted(triangulo.getNome(), triangulo.getArea(), triangulo.getBase(), triangulo.getAltura()));
+//        Downcasting
+        Forma circuloDowncasting = new Circulo("teste");
+        System.out.println(((Circulo) circuloDowncasting).area());
+//        Upcasting
         System.out.println(((Forma) circulo).area());
     }
 }
