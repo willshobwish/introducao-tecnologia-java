@@ -15,16 +15,16 @@ import java.util.ArrayList;
  *
  * @author Willian Murayama
  */
-public class Biblioteca {
+public class Guarita {
 
-    private ArrayList<Livro> livros = new ArrayList<>();
-    private final String filepath = "src/main/java/Save/livros.ser";
+    private ArrayList<Chave> chaves = new ArrayList<>();
+    private final String filepath = "src/main/java/Save/chaves.ser";
 
-    public Biblioteca() {
+    public Guarita() {
         try {
             FileInputStream file = new FileInputStream(filepath);
             ObjectInputStream input = new ObjectInputStream(file);
-            livros = (ArrayList<Livro>) input.readObject();
+            chaves = (ArrayList<Chave>) input.readObject();
             input.close();
             file.close();
         } catch (IOException i) {
@@ -38,14 +38,14 @@ public class Biblioteca {
     }
 
     public void AdicionarLivro(String nome, String descricao, int quantidade) {
-        livros.add(new Livro(nome, descricao, quantidade));
+        chaves.add(new Chave(nome, descricao, quantidade));
     }
 
     public void saveFile() {
         try {
             FileOutputStream file = new FileOutputStream(filepath);
             ObjectOutputStream output = new ObjectOutputStream(file);
-            output.writeObject(livros);
+            output.writeObject(chaves);
             output.close();
             file.close();
             System.out.printf("Salvo com sucesso");
@@ -56,11 +56,11 @@ public class Biblioteca {
 
     public String toString() {
         String dados = "";
-        for (Livro livro : livros) {
+        for (Chave livro : chaves) {
             dados = dados + """
-                            Nome: %s
-                            Descrição: %s
-                            Quantidade: %d
+                            Código da chave: %s
+                            Laboratório: %s
+                            Quantidade de alunos no laboratório: %d
 
                             """.formatted(livro.getNome(), livro.getDescricao(), livro.getQuantidade());
         }

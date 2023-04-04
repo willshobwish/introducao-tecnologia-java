@@ -4,7 +4,7 @@
  */
 package Controller;
 
-import Model.Biblioteca;
+import Model.Guarita;
 
 /**
  *
@@ -12,7 +12,7 @@ import Model.Biblioteca;
  */
 public class Controller {
 
-    private static Biblioteca biblioteca = new Biblioteca();
+    private static Guarita biblioteca = new Guarita();
 
     public Controller() {
     }

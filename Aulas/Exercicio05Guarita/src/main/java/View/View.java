@@ -46,7 +46,7 @@ public class View extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de livro");
 
-        jLabel1.setText("Nome");
+        jLabel1.setText("Código");
 
         cadastrar.setText("Cadastrar");
         cadastrar.addActionListener(new java.awt.event.ActionListener() {
@@ -61,9 +61,9 @@ public class View extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Descrição");
+        jLabel2.setText("Laboratório");
 
-        jLabel3.setText("Quantidade");
+        jLabel3.setText("Quantidade de alunos do laboratório");
 
         objetosCadastrados.setEditable(false);
         objetosCadastrados.setColumns(20);
@@ -71,7 +71,7 @@ public class View extends javax.swing.JFrame {
         objetosCadastrados.setRows(5);
         jScrollPane1.setViewportView(objetosCadastrados);
 
-        jLabel4.setText("Cadastro de livro");
+        jLabel4.setText("Cadastro de chave");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

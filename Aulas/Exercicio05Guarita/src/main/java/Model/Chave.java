@@ -10,40 +10,40 @@ import java.io.Serializable;
  *
  * @author Willian Murayama
  */
-public class Livro implements Serializable {
+public class Chave implements Serializable {
 
-    private String nome;
-    private String descricao;
-    private int quantidade;
+    private String codigo;
+    private String laboratorio;
+    private int quantidadeDeAluno;
 
-    public Livro(String nome, String descricao, int quantidade) {
-        this.nome = nome;
-        this.descricao = descricao;
-        this.quantidade = quantidade;
+    public Chave(String nome, String descricao, int quantidade) {
+        this.codigo = nome;
+        this.laboratorio = descricao;
+        this.quantidadeDeAluno = quantidade;
     }
 
     public String getNome() {
-        return nome;
+        return codigo;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.codigo = nome;
     }
 
     public String getDescricao() {
-        return descricao;
+        return laboratorio;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.laboratorio = descricao;
     }
 
     public int getQuantidade() {
-        return quantidade;
+        return quantidadeDeAluno;
     }
 
     public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+        this.quantidadeDeAluno = quantidade;
     }
 
 }
