@@ -21,6 +21,10 @@ public class Controller {
         biblioteca.AdicionarLivro(nome, descricao, quantidade);
     }
 
+    public void salvarLivros() {
+        biblioteca.saveFile();
+    }
+
     public String toString() {
         return biblioteca.toString();
     }
