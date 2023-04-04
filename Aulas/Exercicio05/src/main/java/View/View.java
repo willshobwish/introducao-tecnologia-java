@@ -15,10 +15,12 @@ public class View extends javax.swing.JFrame {
     private Controller controller = new Controller();
 
     /**
-     * Creates new form Viewq
+     * Creates new form View
      */
     public View() {
         initComponents();
+        objetosCadastrados.setText(controller.toString());
+
     }
 
     /**
@@ -43,6 +45,7 @@ public class View extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de livro");
+        setPreferredSize(new java.awt.Dimension(700, 400));
 
         jLabel1.setText("Nome");
 
@@ -65,6 +68,7 @@ public class View extends javax.swing.JFrame {
 
         objetosCadastrados.setEditable(false);
         objetosCadastrados.setColumns(20);
+        objetosCadastrados.setLineWrap(true);
         objetosCadastrados.setRows(5);
         jScrollPane1.setViewportView(objetosCadastrados);
 
@@ -86,7 +90,7 @@ public class View extends javax.swing.JFrame {
                     .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 447, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -111,7 +115,7 @@ public class View extends javax.swing.JFrame {
                         .addComponent(quantidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cadastrar)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 153, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -125,6 +129,10 @@ public class View extends javax.swing.JFrame {
     private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
         // TODO add your handling code here:
         controller.CadastrarLivro(nome.getText(), descricao.getText(), (Integer) quantidade.getValue());
+        nome.setText("");
+        descricao.setText("");
+        quantidade.setValue(0);
+        controller.salvarLivros();
         objetosCadastrados.setText(controller.toString());
     }//GEN-LAST:event_cadastrarActionPerformed
 
