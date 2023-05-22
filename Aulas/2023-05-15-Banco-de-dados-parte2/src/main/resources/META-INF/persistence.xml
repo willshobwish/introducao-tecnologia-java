@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_2023-05-15-Banco-de-dados-parte2_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.mycompany.banco.de.dados.parte2.Country</class>
+    <class>com.mycompany.banco.de.dados.parte2.City</class>
+    <class>com.mycompany.banco.de.dados.parte2.Staff</class>
+    <class>com.mycompany.banco.de.dados.parte2.Payment</class>
+    <class>com.mycompany.banco.de.dados.parte2.Rental</class>
+    <class>com.mycompany.banco.de.dados.parte2.Actor</class>
+    <class>com.mycompany.banco.de.dados.parte2.Film</class>
+    <class>com.mycompany.banco.de.dados.parte2.Category</class>
+    <class>com.mycompany.banco.de.dados.parte2.Address</class>
+    <class>com.mycompany.banco.de.dados.parte2.SalesByStore</class>
+    <class>com.mycompany.banco.de.dados.parte2.SalesByFilmCategory</class>
+    <class>com.mycompany.banco.de.dados.parte2.FilmActor</class>
+    <class>com.mycompany.banco.de.dados.parte2.CustomerList</class>
+    <class>com.mycompany.banco.de.dados.parte2.FilmList</class>
+    <class>com.mycompany.banco.de.dados.parte2.FilmCategory</class>
+    <class>com.mycompany.banco.de.dados.parte2.ActorInfo</class>
+    <class>com.mycompany.banco.de.dados.parte2.Customer</class>
+    <class>com.mycompany.banco.de.dados.parte2.Inventory</class>
+    <class>com.mycompany.banco.de.dados.parte2.FilmText</class>
+    <class>com.mycompany.banco.de.dados.parte2.Language</class>
+    <class>com.mycompany.banco.de.dados.parte2.StaffList</class>
+    <class>com.mycompany.banco.de.dados.parte2.NicerButSlowerFilmList</class>
+    <class>com.mycompany.banco.de.dados.parte2.Store</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Digitals"/>
+    </properties>
+  </persistence-unit>
+</persistence>
