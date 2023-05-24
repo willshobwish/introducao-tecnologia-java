@@ -1,6 +1,6 @@
 <%-- 
-    Document   : registro
-    Created on : May 23, 2023, 10:50:21 PM
+    Document   : teste
+    Created on : May 23, 2023, 11:18:08 PM
     Author     : Willian
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>teste World!</h1>
     </body>
 </html>

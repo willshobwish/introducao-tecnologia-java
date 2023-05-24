@@ -1,4 +1,4 @@
-package willian.web;
+package willian.mavenproject1;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
