@@ -1,4 +1,4 @@
-package willian.murayama.tomcat;
+package willian.murayama.mavenproject2;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

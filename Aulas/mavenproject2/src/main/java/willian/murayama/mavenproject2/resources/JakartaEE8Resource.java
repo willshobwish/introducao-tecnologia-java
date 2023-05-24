@@ -1,4 +1,4 @@
-package willian.murayama.tomcat.resources;
+package willian.murayama.mavenproject2.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

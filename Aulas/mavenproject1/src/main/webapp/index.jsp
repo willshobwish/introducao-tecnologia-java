@@ -9,9 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Registro</title>
     </head>
     <body>
-        <h1>Hello Waaaaaaaaaaorld!</h1>
+        <form action="${pageContext.request.contextPath}/aa" method="post"> 
+            <label for="fname" >First name:</label><br>
+            <input type="text" id="fname" name="aaaaa"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Submit">
+        </form> 
     </body>
 </html>
